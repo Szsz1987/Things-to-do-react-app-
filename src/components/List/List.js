@@ -4,15 +4,18 @@ import Column from '../Column/Column';
 import styles from './List.scss';
 import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
+import {listData, settings} from '../../data/dataStore';
 
 class List extends React.Component {
   static propTypes = {
     title: PropTypes.node.isRequired,
-    children: PropTypes.node,
+    description: PropTypes.node,
+    columns: PropTypes.array,
     source: PropTypes.string,
   }
   static defaultProps = {
-    children: <p>I can do all the things!!!</p>
+    description: settings.defaultListDescription,
+    source: listData.image,
   }
   render() {
     return (
