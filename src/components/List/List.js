@@ -3,6 +3,7 @@ import Hero from '../Hero/Hero';
 import Column from '../Column/Column';
 import styles from './List.scss';
 import PropTypes from 'prop-types';
+import ReactHtmlParser from 'react-html-parser';
 
 class List extends React.Component {
   static propTypes = {
@@ -18,7 +19,7 @@ class List extends React.Component {
       <section className={styles.component}>
         <Hero titleText={this.props.title} imageSource={this.props.source} />
           <div className={styles.description}>
-            {this.props.children}
+            {ReactHtmlParser(this.props.description)}
           </div>
           <div className={styles.columns}>
             <Column title='Pierwsza'/>
