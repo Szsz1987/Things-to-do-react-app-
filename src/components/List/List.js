@@ -5,6 +5,7 @@ import styles from './List.scss';
 import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
 import {listData, settings} from '../../data/dataStore';
+import Creator from '../Creator/Creator';
 
 class List extends React.Component {
   state = {
