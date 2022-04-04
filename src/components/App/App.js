@@ -8,13 +8,9 @@ class App extends React.Component {
   state = {
     lists: [listData],
   }
-  static propTypes = {
-    title: PropTypes.node,
-    subtitle: PropTypes.node,
-    lists: PropTypes.array,
-  }
   addList(title) {
-    this.setState(state => ({
+    this.setState(state => (
+      {
         lists: [
           ...state.lists, 
           {
