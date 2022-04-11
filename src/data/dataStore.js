@@ -69,55 +69,80 @@ export const listData = {
   ],
 };
 
-export const listDataNew = {
-  title: 'Places to discover <sup>soon!</sup>',
-  description: 'Interesting places I want to visit!',
-  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
-  columns: [
-    {
-      key: 0,
-      title: 'America',
-      icon: 'list-alt',
-      cards: [
-        {
-          key: 0,
-          title: 'Grand Canyon',
-        },
-        {
-          key: 1,
-          title: 'New York',
-        },
-      ],
-    },
-    {
-      key: 1,
-      title: 'China',
-      icon: 'list-alt',
-      cards: [
-        {
-          key: 0,
-          title: 'Great China Wall',
-        },
-        {
-          key: 1,
-          title: 'Anhui',
-        },
-      ],
-    },
-    {
-      key: 2,
-      title: 'Australia',
-      icon: 'list-alt',
-      cards: [
-        {
-          key: 0,
-          title: 'Sydney',
-        },
-        {
-          key: 1,
-          title: 'Gold Coast',
-        },
-      ],
-    },
-  ],
+const lists = [
+  {
+    id: 'list-1',
+    title: 'Things to do <sup>soon!</sup>',
+    description: 'Interesting things I want to check out!',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+];
+
+const columns = [
+  {
+    id: 'column-1',
+    listId: 'list-1',
+    title: 'Books',
+    icon: 'book',
+  },
+  {
+    id: 'column-2',
+    listId: 'list-1',
+    title: 'Movies',
+    icon: 'film',
+  },
+  {
+    id: 'column-3',
+    listId: 'list-1',
+    title: 'Games',
+    icon: 'gamepad',
+  },
+  {
+    id: 'column-4',
+    listId: 'list-2',
+    title: 'Strange column',
+    icon: 'question',
+  },
+];
+
+const cards = [
+  {
+    id: 'card-1',
+    columnId: 'column-1',
+    title: 'This is going to hurt',
+  },
+  {
+    id: 'card-2',
+    columnId: 'column-1',
+    title: 'Interpreter of Maladies',
+  },
+  {
+    id: 'card-3',
+    columnId: 'column-2',
+    title: 'Harry Potter',
+  },
+  {
+    id: 'card-4',
+    columnId: 'column-2', 
+    title: 'Star Wars',
+  },
+  {
+    id: 'card-5',
+    columnId: 'column-3',
+    title: 'The Witcher',
+  },
+  {
+    id: 'card-6',
+    columnId: 'column-3',
+    title: 'Skyrim',
+  },
+];
+
+const initialStoreData = {
+  app: {...pageContents},
+  lists: [...lists],
+  columns: [...columns],
+  cards: [...cards],
 };
+
+export default initialStoreData;
