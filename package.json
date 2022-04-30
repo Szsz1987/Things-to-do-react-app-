@@ -26,7 +26,8 @@
     "react-html-parser": "^2.0.2",
     "react-redux": "^7.0.1",
     "redux": "^4.0.1",
-    "sass": "^1.49.9"
+    "sass": "^1.49.9",
+    "shortid": "^2.2.16"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
