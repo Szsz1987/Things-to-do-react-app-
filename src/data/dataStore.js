@@ -7,6 +7,10 @@ export const settings = {
     buttonCancel: 'Cancel',
     defaultText: 'Add new item',
   },
+  Search: {
+    defaultText: 'Search...',
+    icon: 'search',
+  },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
 };

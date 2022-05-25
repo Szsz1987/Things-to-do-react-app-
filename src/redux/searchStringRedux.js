@@ -1,4 +1,4 @@
-import shortid from "shortid";
+import shortid from 'shortid';
 // import initialStoreData from '../data/dataStore';
 
 // selectors
@@ -17,9 +17,9 @@ export const createAction_changeSearchString = payload => ({payload: payload, id
 // reducer
 export default function reducer(statePart = '', action = {}) {
   switch (action.type) {
-      case CHANGE:
-        return action.payload;
-      default:
-        return statePart;
+    case CHANGE:
+      return action.payload;
+    default:
+      return statePart;
   }
 }

@@ -7,11 +7,11 @@ const mapStateToProps = (state, props) => ({
   cards: getCardsForColumn(state, props.id),
 });
 
-const mapDispachToProps = (dispach, props) => ({
-  addCard: title => dispach(createActionAddCard({
+const mapDispatchToProps = (dispatch, props) => ({
+  addCard: title => dispatch(createActionAddCard({
     columnId: props.id,
     title,
   })),
 });
 
-export default connect(mapStateToProps, mapDispachToProps)(Column);
+export default connect(mapStateToProps, mapDispatchToProps)(Column); 

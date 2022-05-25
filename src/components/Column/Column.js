@@ -31,9 +31,9 @@ class Column extends React.Component {
           ))}
         </div>
         <div className={styles.creator}>
-          <Creator text={settings.cardCreatorText} action={addCard}/>
+        <Creator text={settings.cardCreatorText} action={addCard}/>
         </div>
-      </section>
+        </section>
     );
   }
 }

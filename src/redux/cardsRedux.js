@@ -21,4 +21,4 @@ export default function reducer(statePart = [], action = {}) {
     default:
       return statePart;
   }
-} 
+}
