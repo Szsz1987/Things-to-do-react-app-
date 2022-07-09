@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './App.scss';
+import styles from './Home.scss';
 import List from '../List/ListContainer';
 import PropTypes from 'prop-types';
 import Search from '../Search/SearchContainer';
 
-class App extends React.Component {
+class Home extends React.Component {
   static propTypes = {
     title: PropTypes.node,
     subtitle: PropTypes.node,
@@ -25,4 +25,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Home;
