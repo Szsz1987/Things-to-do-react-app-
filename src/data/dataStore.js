@@ -7,6 +7,9 @@ export const settings = {
     buttonCancel: 'Cancel',
     defaultText: 'Add new item',
   },
+  header: {
+    defaultIcon: 'fas fa-external-link-alt',
+  },
   Search: {
     defaultText: 'Search...',
     icon: 'search',
