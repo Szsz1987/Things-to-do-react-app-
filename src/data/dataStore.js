@@ -10,7 +10,7 @@ export const settings = {
   header: {
     defaultIcon: 'fas fa-external-link-alt',
   },
-  Search: {
+  search: {
     defaultText: 'Search...',
     icon: 'search',
   },
